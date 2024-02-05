@@ -1,0 +1,40 @@
+.TextInput {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  
+  &-input {
+    color: var(--white);
+    background-color: var(--gray_20);
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1.25rem;
+    font-family: inherit;
+    font-size: var(--fSize16);
+
+    &::placeholder {
+      color: var(--transparent_70);
+    }
+  }
+
+  &-input-wrap {
+    position: relative;
+  }
+
+  &-label {
+    color: var(--white);
+    font-size: var(--fSize20);
+  }
+
+  &-errors {
+    min-height: 25px;
+  }
+
+  &-error {
+    color: var(--red_1);
+    font-size: var(--fSize14);
+    text-align: left;
+    display: block;
+    padding: 0.1rem;
+  }
+}
